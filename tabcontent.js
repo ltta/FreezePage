@@ -1,6 +1,4 @@
-debugger;
-alert("Hello!");
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) { 
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.method == "setupTab") {
         document.open();
         document.write("<html>" + request.data.html + "</html>");
