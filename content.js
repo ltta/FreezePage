@@ -32,24 +32,6 @@ function stripComments(elem) {
   };
 }
 
-/*
-var inner = document.documentElement.innerHTML;
-inner = stripScripts(inner);
-
-// Open a new tab/window and set address bar Url according to current page.
-var title = document.title;
-var location = window.location.href;
-
-window.history.pushState(inner, document.title, window.location.href);
-var newTabDocument = newTab.document;
-newTabDocument.open();
-newTabDocument.write("<html>"+ inner + "</html>");
-newTab.pageFrozen = true;
-chrome.extension.sendRequest({ command: "create-tab", html: inner, url: window.location.href, title: document.title  }, function(tab) {
-    tab.executeScript(tab.id, {file: 'tabcontent.js'});
-});
-*/
-
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.method == "createTab") {
         var inner = document.documentElement.innerHTML;
