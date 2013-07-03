@@ -1,4 +1,6 @@
-Simple Chrome extension that turns web pages into completely static pages, disabling any background Javascript (JS). Will not quite give the privacy protection as surfing without does but should allow most pages to correctly display (disabling JS may not) and will reduce CPU load if you have many tabs open, especially on pages with heavy background JS usage. 
+Simple Chrome extension that turns web pages into completely static pages, disabling any background Javascript (JS). Will not quite have the same amount of privacy protection as surfing without JS does but should allow most pages to correctly display (while disabling completely JS may not) and will reduce CPU load if you have many tabs open, especially on pages with heavy background JS usage.
+
+This is meant for some of those sites out there that use excessive background JS on even the most simple pages that might as well have been static -- many articles e.g.
 
 WARNING: Do not use on pages that need JS for user-interaction (like Gmail), will render those pages completely unresponsive and unusable. Perfect for news articles that you plan to read later and just want a static snapshot of.
 
